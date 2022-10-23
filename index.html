@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globales.css">
+    <title>DojoPizza</title>
+</head>
+<body>
+
+    <div class="modal-container ">
+        <div class="modal modal-close">
+            <section>
+                <div class="container-form">
+                    <form action="">
+                        <label class="label1" for="">
+                            Masa
+                            <input id="t_masa" type="text" placeholder=" Masa">
+                        </label>
+                        <label class="label1" for="">
+                            Sauce
+                            <input id="t_sauce" type="text" placeholder=" Salsa">
+                        </label>
+                        <label class="label1" for="">
+                            Queso
+                            <input id="t_cheese" type="text" placeholder=" Queso">
+                        </label>
+                        <label class="label1" for="">
+                            Extra
+                            <input id="t_extra" type="text" placeholder=" Extra">
+                        </label>
+                    </form>
+                </div>
+                <button id="btn-add">Add</button>
+            </section>
+            <p class="close">X</p>
+        </div>
+    </div>
+
+
+
+    <main class="container">
+        <section class="container-name"><h1>DojoPizza</h1></section>
+        <section class="container-options">
+            <div class="container-menu">
+                <h2 class="container-menu__title">Pizzas</h2>
+                <form action="">
+                    <div class="container-menu__checkboxx">
+                        <input onclick="napolitana()" type="radio" name="pizza" id="">
+                        <label class="title-label" for="Napolitana">Napolitana</label>
+                    </div>
+                    <div class="container-menu__checkboxx">
+                        <input onclick="diandrea()" type="radio" name="pizza" id="">
+                        <label class="title-label" for="DiAndrea">Diandrea</label>
+                    </div>
+                    <div class="container-menu__checkboxx">
+                        <input onclick="romana()" type="radio" name="pizza" id="">
+                        <label class="title-label" for="Romana">Romana</label>
+                    </div>
+                    <div class="container-menu__checkboxx">
+                        <button class="title-label cta">Custom</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img class="pizza_img" src="./img/napolitana.jpg" alt="pizza">
+            </div>
+        </section>
+        <section class="section-ingredients">
+            <h2 class="section-ingredients__title">Ingredients : </h2>
+            <p class="p1"></p>
+        </section>
+        <section>
+            <button id="ssend" class="submit">Submit</button>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
